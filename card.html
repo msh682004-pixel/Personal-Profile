@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=devico-width,initial-scale=1.0">
+
+<link rel="stylesheet"href="stl.css">
+    </head>
+    <body>
+        
+
+        <div class="container">
+                  <div class="title">
+                       <h1 style="font-size: 25px;">My Personal Page</h1>
+                  </div>
+            
+            <label for="userImage" class="image-circle">           
+                 <img id="preview"alt=>
+            </label>
+
+            <input type="file" id="userImage"accept="image/*"hidden>
+
+           <div class="name">
+              <h2>Mohammed Sahllh</h2>
+           </div>
+           
+            <div class="specialty">
+                 <h3> Computer Engineering</h3>
+            </div>
+           
+            <p class="description">Hello! My name is Mohammed.<br>I am learning HTML and CSS.</p>
+            
+            <div class="section-title">
+                <h4>My Skills</h4>
+            </div>
+
+            <ul style="text-align: left;">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+              <div class="section-title">
+                <h4>My Hobbies</h4>
+            </div>
+
+            <ul style="text-align: left;">
+                <li>Reading</li>
+                <li>Learning</li>
+                <li>Programming</li>
+            </ul>
+
+            <button class="contact-btn">Contact Me</button>
+<hr>
+
+<footer> &copy;2026 Rania</footer>
+
+
+        </div>
+<script>
+    document.getElementById("userImage").onchange = function(){
+        document.getElementById("preview").src = URL.createObjectURL(this.files[0])
+    };
+</script>
+    
+           
+
+            
+
+
+    </body>
+</html>
